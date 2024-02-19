@@ -179,3 +179,215 @@ console.log(` thanks for comming ${Guests[1]}.`)
 console.log(` thanks for comming ${Guests[2]}.`)
 console.log(` thanks for comming ${Guests[3]}.`)
 console.log(` thanks for comming ${Guests[4]}.`)
+
+17
+// typescript
+// In Typescript
+let Guests: string[] = ['Najaf','Ali','Hassan']
+console.log(`i am inviting you ${Guests[0]}.`)
+console.log(`i am inviting you ${Guests[1]}.`)
+console.log(`ok ${Guests[2]} i am inviting another person.`)
+console.log(Guests[2], 'cant make')
+Guests[2] = 'Abbas'
+console.log(`i am inviting you ${Guests[2]}.`)
+
+
+// console.log(` thanks for comming ${Guests[1]}.`)
+// console.log(`thanks for comming ${Guests[2]}.`)
+// console.log(`thanks for comming ${Guests[3]}.`)
+
+
+Guests.unshift('nazim')
+Guests.push('zamin')
+console.log(Guests)
+
+
+// console.log(` thanks for comming ${Guests[0]}.`)
+// console.log(` thanks for comming ${Guests[1]}.`)
+// console.log(` thanks for comming ${Guests[2]}.`)
+// console.log(` thanks for comming ${Guests[3]}.`)
+// console.log(` thanks for comming ${Guests[4]}.`)
+
+
+console.log(` sorry, you cant come, we face some issue ${Guests[2]}.`)
+console.log(` sorry, you cant come, we face some issue ${Guests[3]}.`)
+console.log(` sorry, you cant come, we face some issue ${Guests[4]}.`)
+
+
+Guests.pop()
+Guests.pop()
+Guests.pop()
+
+
+console.log(` confatulations for ivitation ${Guests[0]}.`)
+console.log(` confatulations for ivitation ${Guests[1]}.`)
+
+
+Guests.pop()
+Guests.pop()
+
+
+console.log(Guests)
+18
+// In Typescript
+let places: string[] = ['pakistan','india','iran','turkey','maldeves']
+console.log(places) // original array
+let s = places.sort() // alphabatical array
+console.log(s)
+console.log(s.reverse())
+let r = places.reverse() // reverse array
+console.log(r)
+console.log(r.sort())
+
+
+19
+// In Typescript
+// follow the past Guests exercise
+console.log('three peoples added')
+console.log(Guests[2]) // update with abbas
+console.log(Guests[0]) // add nazim in starting
+console.log(Guests[4]) // append zamin
+
+
+20
+// In Typescript
+ let things: string[][] = [['mountain1','mountain2'],['country1','country2'],['city1','city2']]
+console.log(things[0])
+console.log(things[1])
+console.log(things[2])
+# In Python
+things = [['mountain1','mountain2'],['country1','country2'],['city1','city2']]
+print(things[0])
+print(things[1])
+print(things[2])
+
+21
+
+
+21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+
+
+Not understanding 21 exercise
+
+
+22
+// In Typescript
+// In Typescript
+ let things: string[][] = [['mountain1','mountain2'],['country1','country2'],['city1','city2']]
+console.log(things[5]) // index error
+# In Python
+things = [['mountain1','mountain2'],['country1','country2'],['city1','city2']]
+print(things[5])  // index error
+
+
+
+
+23
+// In Typescript
+let car = 'subaru';
+if (car=='subaru'){
+   console.log(true)
+}
+else{
+   console.log(false)
+}
+
+
+// In Python
+car = 'subaru'
+if car == 'subaru':
+
+
+ print(True)
+else:
+
+
+ print(False)
+
+
+24
+// In Typescript
+let nam: string = 'Najaf Ali'.toLowerCase()
+if (nam=='najaf ali'){
+   console.log(`welcome ${nam}`)
+}
+else{
+   console.log('try again')
+}
+
+
+const age: number = 18
+if (age==18 || age>18){
+   console.log('elligible for vote')
+}
+if (age<18 && age<0){
+   console.log('not elligible for vote')
+}
+let a:number[] = [1,2,3,4,5]
+console.log(Array.isArray(a))
+
+
+25
+// In Typescript
+let alien_color:string = 'green'
+if (alien_color=='green'){
+   console.log('player earned 5 points')
+}
+else{
+   console.log('failed')
+}
+# In Python
+alien_color = 'green'
+if (alien_color=='green'):
+ print('player earned 5 points')
+else:
+ print('failed')
+
+
+26
+// In Typescript
+let alien_color = prompt('Enter color: ')
+if (alien_color=='green'){
+   console.log('player earned 5 points')
+}
+else{
+   console.log('player earned 10 points')
+}
+
+
+27
+// In Typescript
+let alien_color = prompt('Enter color: ')
+if (alien_color=='green'){
+   console.log('player earned 5 points')
+}
+if (alien_color=='yellow'){
+   console.log('player earned 10 points')
+}
+if (alien_color=='red'){
+   console.log('player earned 15 points')
+}
+else{
+   console.log('please enter color again')
+}
+
+
+28
+// In Typescript
+let age: number = 7
+if (age<=2){
+   console.log('person is baby')
+}
+if (age>2 && age<4){
+   console.log('person is toddler')
+}
+if (age>4 && age<13){
+   console.log('person is kid')
+}
+if (age>13 && age<20){
+   console.log('person is teenager')
+}
+if (age>=20 && age<65){
+   console.log('person is kid')
+}
+
