@@ -391,3 +391,257 @@ if (age>=20 && age<65){
    console.log('person is kid')
 }
 
+29
+// In typescript
+let favorite_fruits: string[] = ['Apple','Banana','Orange','Guava','mango']
+if (favorite_fruits.includes('mango')){
+   console.log('you realy like mango')
+}
+if (favorite_fruits.includes('Guava')){
+   console.log(' not like Guava')
+}
+if (favorite_fruits.includes('Apple')){
+   console.log('you realy like Apple')
+}
+
+
+30
+// In Typescript
+const usernames: string[] = ["admin", "najaf", "ali", "hassan", "abbas"]
+
+
+usernames.forEach(username => {
+   if (username === "admin") {
+       console.log("Hello admin, would you like to see a status report?")
+   } else {
+       console.log(`Hello ${username}, thank you for logging in again.`)
+   }
+})
+
+
+31
+// In Typescript
+let usernames: string[] = ["admin", "najaf", "ali", "hassan", "abbas"]
+
+
+if (usernames.length === 0) {
+   console.log("We need to find some users!")
+} else {
+   usernames.forEach(username => {
+       if (username === "admin") {
+           console.log("Hello admin, would you like to see a status report?")
+       } else {
+           console.log(`Hello ${username}, thank you for logging in again.`)
+       }
+   })
+}
+
+
+usernames = []
+if (usernames.length === 0) {
+   console.log("We need to find some users!")
+}
+
+
+32
+// In Typescript
+Skip
+
+
+33
+// In Typescript
+const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+numbers.forEach(number => {
+   let numEnding: string
+   if (number === 1) {
+       numEnding = "st"
+   } else if (number === 2) {
+       numEnding = "nd"
+   } else if (number === 3) {
+       numEnding = "rd"
+   } else {
+       numEnding = "th"
+   }
+  
+   console.log(`${number}${numEnding}`)
+})
+
+
+34
+// In Typescript
+const pizzas: string[] = ["Piza1", "Piza2", "Piza3"]
+
+
+console.log("My favorite pizzas:")
+for (let i = 0; i < pizzas.length; i++) {
+   console.log(pizzas[i])
+}
+
+
+console.log("\nMy thoughts on each pizza:")
+for (let i = 0; i < pizzas.length; i++) {
+   console.log(`I like ${pizzas[i]}`)
+}
+
+
+console.log("\nI really love pizza!")
+
+
+35
+// In typescript
+const animals: string[] = ["Dog", "Cat", "Rabbit"]
+
+
+console.log("List of animals:")
+for (let i = 0; i < animals.length; i++) {
+   console.log(animals[i])
+}
+
+
+console.log("\nCharacteristics of each animal:")
+for (let i = 0; i < animals.length; i++) {
+   console.log(`A ${animals[i].toLowerCase()} would make a great pet.`)
+}
+
+
+console.log("\nAny of these animals would make a great pet!")
+
+
+36
+// In Typescript
+function make_shirt(size: string, message: string): void {
+   console.log(`${size} "${message}"`)
+}
+
+
+make_shirt("large", "I love TypeScript!")
+# In Python
+def make_shirt(size, message):
+ print(size , message)
+make_shirt('large,','I love Typescript')
+# in python we create function with def keyword
+
+
+
+
+37
+// In Typescript
+function make_shirt(size: string = "large", message: string = "I love TypeScript"): void {
+   console.log(`${size} "${message}"`)
+}
+
+
+make_shirt()
+
+
+make_shirt("medium")
+
+
+make_shirt("small", "JavaScript is awesome!")
+
+
+
+
+
+
+38
+// In Typescript
+function describe_city(city: string, country: string): void {
+   console.log(`${city} is in ${country}.`)
+}
+
+
+describe_city("Karachi", "Pakistan")
+describe_city("Paris", "France")
+
+
+40
+// In Typescript
+Skip
+
+
+41
+// In Typescript
+const magicians: string[] = ["magi1", "maji2", "maji3", "maji4"]
+
+
+function show_magicians(magicianNames: string[]): void {
+   magicianNames.forEach(name => {
+       console.log(name)
+   })
+}
+
+
+show_magicians(magicians)
+
+
+42
+// In Typescript
+Skip
+
+
+
+
+43
+// In Typescript
+Skip
+
+
+44
+// In Typescript
+Skip
+
+
+45
+// In Typescript
+function carInfo(manufacturer: string, modelName: string, ...extras: { [key: string]: any }[]): object {
+   const car: { [key: string]: any } = {
+       manufacturer: manufacturer,
+       modelName: modelName
+   }
+
+
+   extras.forEach(extra => {
+       const key = Object.keys(extra)[0]
+       const value = extra[key]
+       car[key] = value
+   })
+
+
+   return car
+}
+
+
+const car = carInfo("Toyota", "Camry", {color: "blue"})
+
+
+console.log(car)
+
+
+# In Python
+
+def car_info(manufacturer, model_name, **extras):
+   car = {
+       'manufacturer': manufacturer,
+       'model_name': model_name
+   }
+
+
+   for key, value in extras.items():
+       car[key] = value
+
+
+   return car
+
+
+car = car_info("Toyota", "Camry", color="blue")
+
+
+print(car)
+
+
+#I also cover main topics of python, but not repeat (with assignment)
+
+@THANKS
