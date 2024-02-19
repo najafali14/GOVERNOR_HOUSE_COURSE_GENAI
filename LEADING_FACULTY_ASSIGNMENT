@@ -1,12 +1,10 @@
 1
-
 > Sudo apt  install nodejs
 > sudo npm install -global typescript
 > download and install vs code
 > in vs code , go to extension tab and search typescript then install 
-
+  
 2
-
 // In typescript 
 let uname: string = 'Najaf Ali'
 console.log(` Hello ${uname}, would you like to learn some Python today?`)
@@ -14,10 +12,7 @@ console.log(` Hello ${uname}, would you like to learn some Python today?`)
 name = 'Najaf Ali'
 print(f'Hello {name},  would you like to learn some Python today?')
 
-
 3
-
-
 // In Typescript
 let nam: string = 'Najaf Ali'
 console.log(nam.toLowerCase())
@@ -28,10 +23,7 @@ print(name.lower())
 print(name.upper())
 print(name.title())
 
-
 4
-
-
 // In Typescript
 let author: string = 'Albert Einstein'
 console.log(`${author} once said, A person who never made a mistake never tried anything new.`)
@@ -39,12 +31,7 @@ console.log(`${author} once said, A person who never made a mistake never tried 
 author = 'Albert Einstein'
 print(f'{author} once said, A person who never made a mistake never tried anything new.')
 
-
-
-
 5
-
-
 // In Typescript
 let famous_person: string = 'Albert Einstein'
 let message:string = ' A person who never made a mistake never tried anything new.'
@@ -54,24 +41,17 @@ author = 'Albert Einstein'
 message = ' A person who never made a mistake never tried anything new.'
 print(f'{author} once said,{message}')
 
-
 6
-
-
 // In TypeScript
 console.log('\t  Najaf Ali \n')
 # In Python
 print('\t  Najaf Ali \n')
 
-
 7
-
-
 // In typescript
 console.log(4+4,10-2,4*2,16/2)
 # In Python
 print(4+4,10-2,4*2,16/2)
-
 
 8
 // In Typescript
@@ -85,11 +65,6 @@ print(10-2)
 print(4*2)
 print(16//2)
 
-
-
-
-
-
 9
 // In Typescript
 const fnum: number = 14
@@ -97,9 +72,6 @@ console.log(`${fnum} is a my favroute number`)
 # In Python
 fnum = 14
 print(f'{fnum} is a my favroute number')
-
-
-
 
 10
 // In Typescript
@@ -113,9 +85,6 @@ fnum = 14
 # printing favroute number with message
 print(f'{fnum} is a my favroute number')
 
-
-
-
 11
 // In Typescript
 let names: string[] = ['Najaf',"Ali"]
@@ -126,25 +95,16 @@ names = ['Najaf','Ali']
 print(names[0])
 print(names[1])
 
-
-
-
-
-
 12
 // In Typescript
 let names: string[] = ['Najaf',"Ali"]
 console.log('hello',names[0])
 console.log('hello',names[1])
 
-
 # In python
 names = ['Najaf','Ali']
 print('hello',names[0])
 print('hello',names[1])
-
-
-
 
 13
 // In Typescript
@@ -153,7 +113,6 @@ console.log(`I would like to own a Honda ${transports[1]}.`)
 # In Python
 transports  = ['car','motorcycle','bicycle']
 print(f'I would like to own a Honda {transports[1]}.')
-
 
 14
 // In typescript
@@ -167,25 +126,56 @@ print(f'I am inviting you {Guests[0]}.')
 print(f'I am inviting you {Guests[1]}.')
 print(f'I am inviting you {Guests[2]}.')
 
-
-
-
 15
+// In Typescript
 // In Typescript
 let Guests: string[] = ['Najaf','Ali','Hassan']
 console.log(`i am inviting you ${Guests[0]}.`)
 console.log(`i am inviting you ${Guests[1]}.`)
 console.log(`ok ${Guests[2]} i am inviting another person.`)
-// In Python
+console.log(Guests[2], 'cant make')
+Guests[2] = 'Abbas'
+console.log(`i am inviting you ${Guests[2]}.`)
+
+
+console.log(` thanks for comming ${Guests[0]}.`)
+console.log(`thanks for comming ${Guests[1]}.`)
+console.log(`thanks for comming ${Guests[2]}.`)
+# In Python
 Guests  = ['Najaf','Ali','Hassan']
 print(f'I am inviting you {Guests[0]}.')
 print(f'I am inviting you {Guests[1]}.')
 print(f'ok {Guests[2]} i am inviting another person.')
+print(Guests[2],'cant make')
+Guests[2] = 'Abbas'
+print(f'i am inviting you {Guests[2]}.')
 
 
+print(f'thanks for comming {Guests[0]}.')
+print(f'thanks for comming {Guests[1]}.')
+print(f'thanks for comming {Guests[2]}.')
 
+16
+// In Typescript
+// In Typescript
+let Guests: string[] = ['Najaf','Ali','Hassan']
+console.log(`i am inviting you ${Guests[0]}.`)
+console.log(`i am inviting you ${Guests[1]}.`)
+console.log(`ok ${Guests[2]} i am inviting another person.`)
+console.log(Guests[2], 'cant make')
+Guests[2] = 'Abbas'
+console.log(`i am inviting you ${Guests[2]}.`)
 
+// console.log(` thanks for comming ${Guests[1]}.`)
+// console.log(`thanks for comming ${Guests[2]}.`)
+// console.log(`thanks for comming ${Guests[3]}.`)
 
+Guests.unshift('nazim')
+Guests.push('zamin')
+console.log(Guests)
 
-
-
+console.log(` thanks for comming ${Guests[0]}.`)
+console.log(` thanks for comming ${Guests[1]}.`)
+console.log(` thanks for comming ${Guests[2]}.`)
+console.log(` thanks for comming ${Guests[3]}.`)
+console.log(` thanks for comming ${Guests[4]}.`)
